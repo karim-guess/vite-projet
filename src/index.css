@@ -2,17 +2,28 @@
 
 /* ✅ Import Tailwind correctement */
 @import "tailwindcss";
-
-body {
-  background-color: #0d0d0d;
-  color: #f5f5f5;
-  font-family: 'Outfit', sans-serif;
+@plugin "daisyui"{
+  themes: light;
 }
 
-* {
-  font-family: "Outfit", sans-serif;
+
+
+@layer utilities {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out both;
+  }
 }
 
-:root {
-  --color-primary: #5044E5;
-}
+
+
