@@ -39,6 +39,8 @@ const [showHello, setShowHello] = useState(false)
 
       {/* Text on top */}
       <div className="absolute z-30 text-center px-4 ">
+
+        
 <Magnet padding={1} disabled={false} magnetStrength={7}>
   
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight ">
@@ -54,15 +56,8 @@ const [showHello, setShowHello] = useState(false)
         )}
       
 </Magnet>
-
       </div>
-
     </div>
-
-
-
-
-
    </>
 
   )

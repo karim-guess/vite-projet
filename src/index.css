@@ -3,7 +3,7 @@
 /* ✅ Import Tailwind correctement */
 @import "tailwindcss";
 @plugin "daisyui"{
-  themes: light;
+  themes: fantasy;
 }
 
 
@@ -25,5 +25,17 @@
   }
 }
 
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-floating {
+  animation: floating 4s ease-in-out infinite;
+}
 
 

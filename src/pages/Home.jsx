@@ -15,8 +15,6 @@ function Home  ()  {
     <>
     <Navbar/> 
     <Hero />
-
-
     <About/>
  <div className="relative">
   <svg
