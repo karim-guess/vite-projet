@@ -3,7 +3,7 @@
 /* ✅ Import Tailwind correctement */
 @import "tailwindcss";
 @plugin "daisyui"{
-  themes: fantasy;
+  themes: nord;
 }
 
 

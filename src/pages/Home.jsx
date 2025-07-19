@@ -5,7 +5,7 @@ import Beams from '../components/Beams'
 import Projects from '../components/Projects'   
 import About from '../components/About'
 import Formation from '../components/Formation'
-import Competences from '../components/Competences'
+import Contact from '../components/Contact'
 
 
 
@@ -34,7 +34,7 @@ function Home  ()  {
 
     <Projects />
     <Formation />
-    <Competences/>
+    <Contact/>
     
 
     </>

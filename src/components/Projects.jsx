@@ -139,12 +139,14 @@ export default function Projects() {
         <div className="absolute top-4 left-1/2 -translate-x-1/2 h-1 w-16 rounded-full bg-base-300/50 z-10" />
 
         {/* Contenu avec barre style mac */}
+
         <div className="relative max-w-4xl mx-auto mb-16 group">
           {/* Glow en fond (moins fort) */}
-          <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-purple-500/15 via-pink-500/15 to-indigo-500/15 blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-700 ease-in-out -z-10" />
+          
+          <div className="absolute inset-x-0 bottom-0 rounded-2xl bg-gradient-to-r from-pink-400 via-yellow-300 to-blue-400 blur-3xl opacity-20 group-hover:opacity-80 transition-opacity duration-700 ease-in-out z-0 h-42" />
 
           {/* Conteneur style éditeur */}
-          <div className="bg-base-100 backdrop-blur-md rounded-2xl border border-base-300 shadow-md overflow-hidden">
+          <div className="bg-base-100 backdrop-blur-md rounded-2xl border border-base-300 shadow-md overflow-hidden relative z-10">
             {/* Barre style VS Code (boutons Mac) */}
             <div className="flex items-center gap-2 px-4 py-2 bg-base-300 border-b border-base-300">
               <div className="w-3 h-3 rounded-full bg-red-500" />
