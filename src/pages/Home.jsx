@@ -4,8 +4,9 @@ import Navbar from '../components/Navbar'
 import Beams from '../components/Beams'
 import Projects from '../components/Projects'   
 import About from '../components/About'
-import Formation from '../components/Formation'
 import Contact from '../components/Contact'
+import WhyMe from '../components/WhyMe'
+import Footer from '../components/Footer'
 
 
 
@@ -33,8 +34,9 @@ function Home  ()  {
 
 
     <Projects />
-    <Formation />
+    <WhyMe />
     <Contact/>
+    <Footer />
     
 
     </>
