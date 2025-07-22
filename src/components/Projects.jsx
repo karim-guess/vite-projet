@@ -323,6 +323,13 @@ export default function Projects() {
           </button>
         </Dialog.Panel>
       </Dialog>
+      <div className="mt-12 flex flex-col items-center opacity-80 text-sm text-base-content">
+  <div className="text-3xl mb-2">🏗️</div>
+  <p className="font-medium">D'autres projets sont en cours de construction...</p>
+  <p className="text-base-content/60">Hâte de vous les présenter !</p>
+</div>
     </section>
+
+    
   );
 }
