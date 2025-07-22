@@ -4,61 +4,82 @@ import { Dialog } from "@headlessui/react";
 const bigProjects = [
   {
     id: 1,
-    title: "Projet Gros 1",
-    description: "Description fictive d'un gros projet mis en avant.",
+    title: "Owner Technology",
+    description: "Site vitrine moderne pour Owner Technology avec présentation des services, FAQ interactive et formulaire de contact avancé",
     images: [
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+      "/images/Owner1.png",
+      "/images/Owner2.png",
+      "/images/Owner3.png",
+      "/images/Owner4.png",
     ],
-    technologies: ["React", "Tailwind", "Vite"],
+    technologies: ["Symfony", "Php", "JavaScript","MySQL"],
+    url: "https://ownertechnology.com/",
   },
   {
     id: 2,
-    title: "Projet Gros 2",
-    description: "Un autre projet important pour démontrer mes compétences.",
+    title: "Portfolio",
+    description: "Portfolio personnel réalisé pour présenter mes projets, compétences et expériences. Il intègre une section dynamique de réalisations, un système de contact par formulaire ainsi qu’un design responsive moderne.",
     images: [
-      "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80",
+      "/images/Portfolio1.png",
+      "/images/Portfolio2.png",
+      "/images/Portfolio3.png",
+      "/images/Portfolio4.png",
     ],
-    technologies: ["Node.js", "Socket.io", "React"],
+    technologies: ["Symfony", "AssetMapper", "Twig","JavaScript","Bootstrap"],
+    url: "https://karimguessab.fr/",
   },
 ];
 
 const smallProjects = [
   {
     id: 3,
-    title: "Projet Petit 1",
-    description: "Petit projet avec description courte.",
+    title: "CritCarteGrise",
+    description: "Développement d'une application web moderne pour la gestion des démarches administratives liées aux cartes grises. Le projet utilise Symfony avec l'intégration de Turbo et Stimulus pour offrir une expérience utilisateur exceptionnelle avec des formulaires intelligents ultra-réactifs. Cette architecture permet des validations en temps réel, des mises à jour dynamiques sans rechargement de page et une navigation fluide.",
     images: [
-      "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80",
+      "/images/Ccg1.png",
+      "/images/Ccg2.png",
+      "/images/Ccg3.png",
+      "/images/Ccg4.png",
     ],
-    technologies: ["React", "Stripe", "Tailwind"],
+    technologies: ["Symfony", "Php", "Turbo", "Stimulus", "MariaDB", "Api Rest"],
+    url: "https://www.critcartegrise.fr/",
   },
   {
     id: 4,
-    title: "Projet Petit 2",
-    description: "Un autre petit projet à découvrir.",
+    title: "Al Dirassa",
+    description: "Développement d'une solution e-learning sur mesure pour l'Institut Al Dirassa, utilisant les toutes dernières technologies du marché. Le projet est construit avec PHP 8.4 et Symfony 7.3, intégrant Turbo et Stimulus pour offrir une expérience utilisateur moderne et réactive sans la complexité d'un framework JavaScript lourd. Cette architecture cutting-edge permet des interactions fluides, des mises à jour partielles de page et une performance exceptionnelle, tout en maintenant la simplicité et la maintenabilité du code Symfony.",
     images: [
-      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=80",
+      "/images/aldirass-accueil.png",
+      "/images/aldirass-reserve.png",
+      "/images/aldirass-student-calendar.png",
+      "/images/aldirass-new-order.png",
     ],
-    technologies: ["Vue", "Firebase"],
+    technologies: ["Php 8.4", "Symfony 7.3", "Turbo", "Stimulus","MariaDB", "Asset-map","Bootstrap"],
   },
   {
     id: 5,
-    title: "Projet Petit 3",
-    description: "Description rapide d'un projet sympa.",
+    title: "Cinéma Explorer Api Tmdb",
+    description: "Une application web PHP permettant de rechercher des informations sur des films via l'API The Movie Database (TMDb).",
     images: [
-      "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=800&q=80",
+      "/images/tmdb1.png",
+      "/images/tmdb2.png",
+      "/images/tmdb3.png",
+      "/images/tmdb4.png",
     ],
-    technologies: ["Angular", "TypeScript"],
+    technologies: ["Php", "Html", "Css", "JavaScript"],
+    url: "https://tmdb.karimguessab.fr/",
   },
   {
     id: 6,
-    title: "Projet Petit 4",
-    description: "Dernier petit projet pour la vitrine.",
+    title: "ENI-enchères",
+    description: "Cette plateforme d’enchères en ligne a été développée dans le cadre d’un projet à l’ENI École Informatique. Conçue avec Java EE, elle permet aux utilisateurs de mettre en vente des objets et de participer à des enchères en temps réel.",
     images: [
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+      "/images/eni1.png",
+      "/images/eni2.png",
+      "/images/eni3.png",
+      "/images/eni4.png",
     ],
-    technologies: ["Svelte", "Tailwind"],
+    technologies: ["Java EE","Servlets ", "SQL Server", "Booststrap"],
   },
 ];
 
@@ -284,7 +305,16 @@ export default function Projects() {
               </span>
             ))}
           </div>
-
+{selected?.url && (
+  <a
+    href={selected.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-6 btn btn-outline btn-accent hover:bg-accent hover:text-white transition-all"
+  >
+    Voir le site
+  </a>
+)}
           <button
             onClick={closeModal}
             className="mt-8 btn btn-primary bg-violet-600 hover:bg-violet-700 border-none text-white"
